@@ -8,7 +8,7 @@
 	<br /><br /></head>
 <body>
 <form id="form1" name="form1" action="" method="post">
-	Enter the second number of the combination: <input id="u" name="u" value="0" size="5"/>
+	Enter the second number of the combination: <input id="u" name="2nd" value="0" size="5"/>
 	<input type="submit" name="submit">
 </form>
 <?php
@@ -17,8 +17,8 @@ $color2 = "#F4F9FF"; //Row color for table rows.
 $row_count = 0; //Set row counter.
 
 //Ask user for the second number of the combination.
-$userinput=$_POST["u"];
-if(isset($_POST['u'])){
+$userinput=$_POST["2nd"];
+if(isset($_POST['2nd'])){
 echo "You entered: " . $userinput;
 if ($userinput > 39 || $userinput < 0){
 	echo "<script type='text/javascript'>	alert('Number must be between 0 and 39!');</script>";

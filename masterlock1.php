@@ -8,7 +8,7 @@
 	<br /><br /></head>
 <body>
 <form id="form1" name="form1" action="" method="post">
-	Enter the first number of the combination: <input id="u" name="u" value="0" size="5"/>
+	Enter the first number of the combination: <input id="u" name="1st" value="0" size="5"/>
 	<input type="submit" name="submit">
 </form>
 <?php
@@ -25,8 +25,8 @@ If the remainder is one of these numbers:
 $color1 = "#C0C0C0";
 $color2 = "#F4F9FF";
 
-$firstnumber=$_POST["u"];
-if(isset($_POST['u'])){
+$firstnumber=$_POST["1st"];
+if(isset($_POST['1st'])){
 echo "You entered: " . $firstnumber;
 if ($firstnumber > 39 || $firstnumber < 0){
 	echo "<script type='text/javascript'>	alert('Number must be between 0 and 39!');</script>";
