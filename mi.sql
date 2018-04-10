@@ -1,3 +1,10 @@
+use masterlock;
+create table combinations (id int(11) unsigned auto_increment primary key
+, first int(2) not null
+, second int(2) not null
+, third int(2) not null
+) engine=innodb;
+
 insert into combinations (first, second, third) values (0,2,0);
 insert into combinations (first, second, third) values (0,6,0);
 insert into combinations (first, second, third) values (0,10,0);
